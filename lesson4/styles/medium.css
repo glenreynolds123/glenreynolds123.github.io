@@ -1,0 +1,14 @@
+@media only screen and (min-width: 480px) {
+    body{
+        font-size: 12pt;
+        text-align: center;
+        background-color: red;
+    }
+    img{ 
+        width: 500px;
+   }
+   main{
+       display:grid;
+        grid-template-columns: 1fr 1fr; 
+   }
+}
