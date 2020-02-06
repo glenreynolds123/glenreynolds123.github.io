@@ -1,14 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+
 @media only screen and (min-width: 375px) {
     body{
+        font-family: 'Roboto', sans-serif;
         font-size: 12pt;
         text-align: center;
-        background-color: red;
+        background-color:blue;
     }
+    li{
+        list-style: none;
+
+    }
+
+
     img{ 
-        width: 500px;
-   }
-   main{
-       display:grid;
-        grid-template-columns: 1fr 1fr; 
+        width: 400px;
+    
    }
 }
