@@ -75,6 +75,10 @@ a{
     padding: 1em;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+}
 
 
 body{
@@ -84,7 +88,7 @@ body{
 }
 
 main{
-    max-width: 100%;
+    max-width: 80%;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
@@ -94,10 +98,9 @@ main{
     color: gray;
 }
 
-#hero{
+section {
     background-color: gray;
-    text-align-last: center;
-    color: gray;
+    text-align: center;
 }
 
 #five-day-forecast{

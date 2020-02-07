@@ -10,6 +10,12 @@
         justify-content: center;
     }
 
+    
+    img{ 
+        width: 100px;
+    
+   }
+
     .navigation {
         display: flex;
         
@@ -25,13 +31,10 @@
 
     }
 
-
-
+    .flex {
+        flex-direction: row;
+    }
 }
 
 
 
-    img{ 
-        width: 100px;
-    
-   }

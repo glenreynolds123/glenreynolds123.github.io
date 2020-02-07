@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,45 +12,47 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 </head>
+
 <body>
-    <header>
-    <img class="picture-Preston" src="images/preston-weather-image.png" alt="main image">
-    <h1>Preston Weather Endeavor</h1>
-     <h2>Our objective is to educate and inform people of all ages and backgrounds </h2>
+    <header class="flex">
+        <img class="picture-Preston" src="images/preston-weather-image.png" alt="main image">
+        <div>
+            <h1>Preston Weather Endeavor</h1>
+            <h2>Our objective is to educate and inform people of all ages and backgrounds </h2>
+        </div>
     </header>
     <nav>
         <ul class="flex">
-            <li><a class="hamburger" href="#" onclick="toggleMenu()">&#9776; Menu</li>
-            <li>
-             <a href="styles/preston-4.html">Home</a> </li>
-            <li><a href="#"></a>Preston</li>
+            <li><a class="hamburger" href="#">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a> </li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Haven</a> </li>
-             <li><a href="#">Gallery</a> </li>
-
-
+            <li><a href="#">Gallery</a> </li>
         </ul>
     </nav>
     <main>
-    <h2>Preston</h2>
-    <section id="hero">
-<h2> Hero <h2/>
-   </section>
-    <section id="five-day forecast">
-        <h2>Five-Day Forecast</h2>
-    </section>
-    <section id="article">
-     <h2>Article</h2>   
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-    </section>
-</main>
+        <h2>Preston</h2>
+        <section id="hero">
+            <h2>Hero</h2>
+        </section>
+        <section id="five-day forecast">
+            <h2>Five-Day Forecast</h2>
+        </section>
+        <section id="article">
+            <h2>Article</h2>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+        </section>
+    </main>
     <footer>
         &copy; Preston Weather Site | <span id="current-date"> </span> | Glen Reynolds
     </footer>
     <script src="scripts/main-page.js"></script>
-    
+    <script src="scripts/menu.js"></script>
+
 </body>
+
 </html>
