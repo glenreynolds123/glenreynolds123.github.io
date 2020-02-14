@@ -5,6 +5,19 @@
     nav {
         padding-bottom: 1em;
     }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
     
      main {
          width: 70%;

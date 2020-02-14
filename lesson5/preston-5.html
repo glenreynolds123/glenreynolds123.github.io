@@ -6,42 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Preston</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/normalize.css">
 
 </head>
-<body onload="doInputOutput(), weatherConditions()">
+
+<body>
     <aside>
-        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </aside>
     <header>
         <img src="images/favicon.png" alt="favicon image" class="icon">
         <h2>Reynolds Weather Network</h2>
         <h3>For all ages who want to be informed.</h3>
     </header>
-    <ul class="flex navigation">
-        <li><a class="hamburger" href="#">&#9776; Menu</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Preston</a></li>
-        <li><a href="#">Soda Springs</a> </li>
-        <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Haven</a> </li>
-        <li><a href="#">Gallery</a> </li>
-    </ul>
-    
+    <nav>
+        <ul id="menu">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a> </li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Haven</a> </li>
+            <li><a href="#">Gallery</a> </li>
+        </ul>
+    </nav>
     <main>
         <h2>Preston</h2>
         <!-- ADD HERO IMAGE HERE-->
-
-        <!-- Pancakes! :) -->
-        <section id="pancake" class="hidden">
-            <p>
-                
-            </p>
-        </section>
-
+        <article>
+            <div>
+                <span>Current Temp:</span>
+                <span id="current-temp"></span>
+            </div>
+            <div>
+                <span>Wind Speed:</span>
+                <span id="wind-speed"></span>
+            </div>
+            <div>
+                <span>Humidity:</span>
+                <span id="humidity"></span>
+            </div>
+        </article>
 
         <!-- Five-Day Forecast -->
         <section id="forecast">
@@ -65,28 +73,37 @@
                 </tr>
             </table>
         </section>
-        <br/>
+        <br />
         <article class="article">
             <h2>Article Title</h2>
             <h4>by Preston Productions</h4>
             <img src="images/preston-idaho.JPEG" alt="City of Preston">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque
+                architecto dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto
+                dolorem! Soluta rem sit dicta totam atque? Sit quis aut earum vel neque nisi.Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Rerum autem minus, similique ad eveniet neque architecto dolorem! Soluta
+                rem sit dicta totam atque? Sit quis aut earum vel neque nisi.</p>
         </article>
         <div class="contact">
             <h2 class="service">Our Customer's Service Information</h2>
-            <p class="service2">208-496-9000<br/>Monday - Friday<br/>7:00AM - 8:00PM Mountain Time</p>
+            <p class="service2">208-496-9000<br />Monday - Friday<br />7:00AM - 8:00PM Mountain Time</p>
             <h2 class="email">Don't hesistate to email us!</h2>
-            <p class="email2"><a href="rey17006@byui.edu"><rey17006@byui class="edu"></a></p>
+            <p class="email2"><a href="rey17006@byui.edu">
+                    <rey17006@byui class="edu">
+                </a></p>
             <div class="iframediv">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21156.11761607768!2d-111.89564215760097!3d42.094129108035744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e1!3m2!1sen!2sus!4v1580231338876!5m2!1sen!2sus" allowfullscreen=""></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21156.11761607768!2d-111.89564215760097!3d42.094129108035744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e1!3m2!1sen!2sus!4v1580231338876!5m2!1sen!2sus"
+                    allowfullscreen=""></iframe>
             </div>
         </div>
     </main>
     <footer>
         <div>
-            
+
             &copy; Preston Weather Site | <span id="current-date"> </span> | Glen Reynolds
-            
+
         </div>
         <div id="map">
             <iframe

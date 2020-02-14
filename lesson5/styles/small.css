@@ -90,16 +90,27 @@ nav {
 }
 
 nav ul {
-    display:block;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
     margin: 0;
     padding-top: 1em;
     padding-left: 0;
 }
 
+nav ul.responsive li {
+    display: block;
+}
+
 nav ul li {
     text-align: center;
-    display:block;
+    display: none;
 }
+
+nav ul li:first-child {
+    display: block;
+}
+
 
 nav ul li a {
     display:block;
@@ -109,12 +120,12 @@ nav ul li a {
     height:100%;
 }
 
-nav ul li a:hover {
-    background-color: var(--link-color);
-    color:gray;
-    height:100%;
+    /* nav ul li a:hover {
+        background-color: var(--link-color);
+        color:gray;
+        height:100%;
 
-}
+    } */
 
 nav ul li a.active {
     background-color: var(--link-color);
@@ -135,11 +146,6 @@ table {
     width: 100%;
 }
 
-ul {
-    display: block;
-    list-style: none;
-    margin-left: 0px;
-}
 
 
 /* Class Selectors */

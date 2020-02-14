@@ -1,6 +1,6 @@
 document.querySelector('#current-temp').innerHTML = '50&deg;';
-document.querySelector('#current-temp').innerHTML = '10mph;';
-document.querySelector( '#humidity').innerHTML = '10&percnt';
+document.querySelector('#wind-speed').innerHTML = '10mph;';
+document.querySelector('#humidity').innerHTML = '10&percnt;';
 
 const currentDate = new Date();
 const aside = document.querySelector('aside');
