@@ -37,6 +37,9 @@
         display: none;
     }
     
+    
+    
+    
     article img {
         position:absolute;
         width: 40%;
@@ -102,7 +105,14 @@
     .forecast {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        background-color: #F2F2F2;
+        left: 20%;
+        padding: 10px;
+        position: absolute;
+        top: auto;
+        opacity: .8;
     }
+    
     
     .fore_contain h3 {
         text-align: center;
