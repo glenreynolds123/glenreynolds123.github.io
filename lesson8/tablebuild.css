@@ -2,7 +2,7 @@
 caption{
     font-size: 1.3em;
     font-family: "Ubuntu";
-    font-weight: 700;
+    font-weight: 700pt;
 }
 
 
@@ -10,14 +10,18 @@ caption, tfoot  td{
     background-color: #7fb9c2;
 }
 
+body { 
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400pt;
 
+}
 
 
 
 table, caption, tr, th, td {
     border: 1px solid gray;
     border-collapse: collapse;
-    font-family:'Ubuntu', sans-seriff;
+    font-family:'Ubuntu', sans-serif;
     padding: 5px;
     text-align: center;
 }
