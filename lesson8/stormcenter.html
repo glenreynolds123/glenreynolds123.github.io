@@ -1,0 +1,120 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.png" alt="favicon image" class="icon">
+        <h2>Storm Center</h2>
+        <h3>For all ages who want to be informed.</h3>
+    </header>
+    <nav>
+        <ul id="menu">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a> </li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Haven</a> </li>
+            <li><a href="#">Gallery</a> </li>
+        </ul>
+    </nav>
+    <main>
+        <form action="thanks.html" method="GET">
+            <div>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName"required>
+        </div>
+        
+        
+        <div>
+            <label for="email">Email:</label>
+            <input  type="email" id="email" name="email"placeholder="example@domain.com"  >
+        
+        
+        </div>
+        <div>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="email" >
+
+
+
+        </div>
+        <div>
+            <label for="zipcode">Zipcode:</label>
+            <input type="zipcode" id="zipCode" name="zipCode">
+
+
+
+
+        </div>
+        <div>
+
+            <label for="zipcode">Storm Date:</label>
+            <input type="date" id="stormDate" name="stormDate">
+
+        </div>
+
+
+
+       
+        
+        <div>
+            <label for="stormSeverity">Storm Severity:</label>
+            <input type="range" id="stormSeverity" name="stormSeverity"   min="1"  max="10" step="1"  list="tickmarks"
+           
+            oninput="adjustRating(this.value)"
+            onchange="adjustRating(this.value)">
+            <span id="rating">5</span>
+            
+            
+            
+
+
+        </div>
+        
+        
+        <div>
+
+            <input type="submit" value="Submit">
+            <input  type="reset" value="Reset">
+
+
+
+        </div>
+
+        </form>
+        <h2>Storm Center</h2>
+        <article class="pictures">
+            <img src="images/placeholder.png" data-src="images/bluesky.jpg" alt="BlueSky">
+            <img src="images/placeholder.png" data-src="images/laketahoe.jpg" alt="LakeTahoe">
+            <img src="images/placeholder.png" data-src="images/lighting.jpg" alt="lightning">
+            <img src="images/placeholder.png" data-src="images/sunnyweather.jpg" alt="sunnyweather">
+            <img src="images/placeholder.png" data-src="images/tornado.jpg" alt="tornado">
+            <img src="images/placeholder.png" data-src="images/tree.jpg" alt="tree">
+            <img src="images/placeholder.png" data-src="images/weatherradar.jpg" alt="weatherradar">
+        </article>
+    </main>
+    <footer>
+        <div>
+            &copy; Preston Weather Site | <span id="current-date"> </span> | Glen Reynolds
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lazyload.js"></script>
+    <script src="scripts/rating.js"></script>
+</body>
+
+</html>
