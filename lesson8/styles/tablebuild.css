@@ -1,55 +1,38 @@
 
-caption{
-    font-size: 1.3em;
-    font-family: 'Ubuntu';
-    font-weight: 700pt;
+table{
+    box-shadow:10px 10px 5px #628ca6;
 }
 
-
-caption, tfoot  td{
-    background-color: #7fb9c2;
-}
-
-body { 
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400pt;
-
-}
-
-
-
-table, caption, tr, th, td {
+table, td{
     border: 1px solid gray;
+    padding: 12px;
     border-collapse: collapse;
-    font-family:'Ubuntu', sans-serif;
-    padding: 5px;
+    font-family: 'Ubuntu', 'sans-serif';
     text-align: center;
+}   
+
+table#tables tr:nth-child(even){
+    background-color:#e7f0ed;
 }
-tfoot td{
+
+table#tables tr:nth-child(odd){
+    background-color: #e7ffed;
+}
+thead tr td{
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
+}
+tfoot tr td{
+    color: black;
     font-size: .7em;
+    font-weight: bolder;
+}
+table#tables tr:nth-child(1){
+    color: white;
 }
 
-
-
-tr{
-
-    background-color: #e7f0ed;
+table#tables tr:nth-child(5){
+    color: white;
 }
 
-
-
-tr{
-    background-color: #628ca6;
-
-
-}
-tr:nth-child(even) {
-
-    background: color #e7ffed;
-}
-
-th, #november-sales-goal{
-    background-color: #628ca6;
-    color: #fff;
-
-}
