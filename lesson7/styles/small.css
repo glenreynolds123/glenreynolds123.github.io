@@ -12,7 +12,7 @@ article {
 }
 
 article img {
-    float: right;
+    /* float: right; */
     max-width:45%;
     margin: 0 0 1em 1em;
 }
