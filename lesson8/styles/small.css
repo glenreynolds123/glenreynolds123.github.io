@@ -26,6 +26,10 @@ aside p {
     margin: 0 auto;
 }
 
+div {
+    margin: 10px;
+}
+
 footer {
     background-color: var(--accent1-color);
     color:var(--text-color);
@@ -77,6 +81,11 @@ iframe {
 img {
     margin: 0 auto;
     width: 100%;
+}
+
+label {
+    display: inline-block;
+    min-width: 150px;
 }
 
 main {
