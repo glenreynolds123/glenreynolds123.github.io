@@ -1,4 +1,4 @@
-fetch()
+fetch("https://byui-cit230.github.io/weather/data/towndata.json")
 .then(result => {
     return result.json();
 
@@ -16,7 +16,10 @@ fetch()
     document.querySelector('#fishHavenYearFounded').textContent = `Year Founded: ${town.yearFounded}`;
     document.querySelector('#fishHavenPopulation').textContent = `Population:  ${town.currentPopulation}`;
     document.querySelector('#fishAnnualRainfall').textcontent = `Annual Rainfall: ${town.averageRainfall}`;
-    document.querySelector('#')
+    document.querySelector('#fishHavenImage').setAttribute
+    ('src', `images/${town.photo}`);
+    document.querySelector('#fishHavenImage').setAttribute
+    ('alt', town.name);
     
     document.querySelector('#fishHavenMotto').textContent = town.motto;
   
