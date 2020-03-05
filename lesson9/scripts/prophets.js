@@ -4,8 +4,8 @@ fetch('https://byui-cit230.github.io/canvas-referenced/latter-day-prophets.json'
             return result.json();
         })
     
-      .then( prophets => {
-       let prophetList = prophetList.prophets;
+      .then( prophetList => {
+       let prophets = prophetList.prophets;
 
       prophetList.forEach(
           prophet => {
@@ -14,14 +14,10 @@ fetch('https://byui-cit230.github.io/canvas-referenced/latter-day-prophets.json'
            document.createElement('h1');
            h1.textContent = `${prophet.name} ${prophet.lastname}`;
 
-           let dateOfBirth = document.createElement('h2');
-           dateOfBirth.textContent = `Date of Birth`
+           let dateOfBirth = document.createElement('p');
+           dateOfBirth.textContent = `Date of Birth: ${prophet.birthdate}`;
 
-           let dateOfBirth = document.createElement('span');
-           dateOfBirth.textContent = `Place of Birth:  ${}`
-
-
-           let placeOfBirth = document.createElement('p');
+            let placeOfBirth = document.createElement('p');
            placeOfBirth.textContent = `Place of Birth: ${prophet.birthplace}`;
            
            let image = document.createdElement('img');
