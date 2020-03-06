@@ -1,6 +1,6 @@
-  /* HTML Selectors */
+   HTML Selectors 
 @media only screen and (min-width: 32.5em) {
-  /* nav {
+   nav {
     padding-bottom: 1em;
 }
 
@@ -19,38 +19,38 @@ nav ul li {
 
  main {
      width: 70%;
-} */
+} 
 
-/* article {
+ article {
     position: relative;
     height: 250px;
     padding-bottom: 3em;
-} */
+} 
 
-/* article h2 {
+ article h2 {
     position: absolute;
 }
 
 article h4 {
     display: none;
-} */
+} 
 
 
 
 
-/* article img {
+ article img {
     position:absolute;
     width: 40%;
     top: 2em;
     right:2em;
 } */
 
-/* article p {
+ article p {
     position: absolute;
     top: 3em;
     max-width: 50%;
-} */
-/* 
+} 
+
 header h1 {
     font-size: 3.5em;
 }
@@ -64,11 +64,11 @@ iframe {
 } */
 
 
-/* Class Selectors */
-/* .pictures {
+ Class Selectors 
+ .pictures {
     grid-template-columns: 1fr 1fr;
 }
-}
+
 .service {
     position: absolute;
     top: 0px;
@@ -144,4 +144,4 @@ iframe {
 .topnav {
     width: 70%;
     margin: 0 auto;
-} */
+} 
