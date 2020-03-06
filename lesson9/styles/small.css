@@ -9,12 +9,12 @@ article {
     color:var(--text-color);
     padding: .5em;
     margin-bottom: 2em;
-}
+} 
 
 article img {
-    float: right;
-    max-width:45%;
-    margin: 0 0 1em 1em;
+    
+     max-width:45%; 
+     margin: 0 0 1em 1em; 
 }
 
 aside {
@@ -25,7 +25,7 @@ aside {
 aside p {
     margin: 0 auto;
 }
-
+/*
 div {
     margin: 10px;
 }
@@ -281,6 +281,6 @@ table {
     display:block;
     float:none;
     text-align: center;
-}
+} */
 
 /* ID selectors */

@@ -1,6 +1,6 @@
   /* HTML Selectors */
 @media only screen and (min-width: 32.5em) {
-  nav {
+  /* nav {
     padding-bottom: 1em;
 }
 
@@ -19,7 +19,7 @@ nav ul li {
 
  main {
      width: 70%;
-}
+} */
 
 /* article {
     position: relative;
@@ -27,13 +27,13 @@ nav ul li {
     padding-bottom: 3em;
 } */
 
-article h2 {
+/* article h2 {
     position: absolute;
 }
 
 article h4 {
     display: none;
-}
+} */
 
 
 
@@ -50,7 +50,7 @@ article h4 {
     top: 3em;
     max-width: 50%;
 } */
-
+/* 
 header h1 {
     font-size: 3.5em;
 }
@@ -61,11 +61,11 @@ header h3 {
 
 iframe {
     display:block;
-}
+} */
 
 
 /* Class Selectors */
-.pictures {
+/* .pictures {
     grid-template-columns: 1fr 1fr;
 }
 }
@@ -144,4 +144,4 @@ iframe {
 .topnav {
     width: 70%;
     margin: 0 auto;
-}
+} */
