@@ -128,12 +128,12 @@ nav ul li a {
     height:100%;
 }
 
-    /* nav ul li a:hover {
+     nav ul li a:hover {
         background-color: var(--link-color);
         color:gray;
         height:100%;
 
-    } */
+    } 
 
 nav ul li a.active {
     background-color: var(--link-color);
