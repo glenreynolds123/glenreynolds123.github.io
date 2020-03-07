@@ -8,7 +8,7 @@ article {
     background-color:gray;
     color:var(--text-color);
     padding: .5em;
-    margin-bottom: 2em;
+    
 } 
 
 article img {
@@ -156,7 +156,7 @@ table {
 
 
 
-/* Class Selectors */
+ Class Selectors 
 
 .contact {
     
@@ -280,6 +280,6 @@ table {
     display:block;
     float:none;
     text-align: center;
-} */
+} 
 
 /* ID selectors */
