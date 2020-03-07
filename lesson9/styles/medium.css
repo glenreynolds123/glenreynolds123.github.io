@@ -1,4 +1,4 @@
-   HTML Selectors 
+
 @media only screen and (min-width: 32.5em) {
    nav {
     padding-bottom: 1em;
@@ -39,9 +39,9 @@
         }
     }
 
-nav ul {
-    flex-direction: row;
-    justify-content: space-around;
+nav  a{ 
+    display: block;
+
 }
 
 nav ul li:first-child {
