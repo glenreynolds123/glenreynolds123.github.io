@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+
+<body>
+    <!-- <aside>
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </aside> -->
+    <header>
+        <img src="images/favicon.png" alt="favicon image" class="icon">
+        <h2>Reynolds Weather Network</h2>
+        <h3>For all ages who want to be informed.</h3>
+    </header>
+    <nav>
+        <ul id="menu">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a> </li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Haven</a> </li>
+            <li><a href="#">Gallery</a> </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="cities">
+            <article class="homeGrid">
+                <h1 id="fishHavenName"></h1>
+                <h2 id="fishHavenMotto"></h2>
+                <p id="fishHavenYearFounded"></p>
+                <p id="fishHavenPopulation"></p>
+                <p id="fishHavenAverageRainfall"></p>
+
+                <p>
+                    <img class="homeGridImg" src="" alt="" id="fishHavenImage">
+                </p>
+            </article>
+            <article class="homeGrid">
+                <h1 id="prestonName"></h1>
+                <h2 id="prestonMotto"></h2>
+                <p id="prestonYearFounded"></p>
+                <p id="prestonPopulation"></p>
+                <p id="prestonAverageRainfall"></p>
+
+                <p>
+                    <img class="homeGridImg" src="" alt="" id="prestonImage">
+                </p>
+
+            </article>
+            <article class="homeGrid">
+                <h1 id="sodaspringsName"></h1>
+                <h2 id="sodaspringsMotto"></h2>
+                <p id="sodaspringsYearFounded"></p>
+                <p id="sodaspringsPopulation"></p>
+                <p id="sodaspringsAverageRainfall"></p>
+
+                <p>
+                    <img class="homeGridImg" src="" alt="" id="sodaspringsImage">
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+
+            &copy; Preston Weather Site | <span id="current-date"> </span> | Glen Reynolds
+
+        </div>
+        <div id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.0082163285324!2d-111.78527078411564!3d43.814188979116075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540b03c3c8b0cd%3A0xfd28a97e4cccebc!2s525%20S%20Center%20St%2C%20Rexburg%2C%20ID%2083460!5e0!3m2!1sen!2sus!4v1571071860264!5m2!1sen!2sus"
+                width="200" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/towns.js"></script>
+</body>
+
+</html>
