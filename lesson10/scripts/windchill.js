@@ -23,3 +23,5 @@ document.querySelector('weatherImage')
 
 document.querySelector('weatherImage')
 .setAttribute('alt', jsObject.weather[0].main);
+ 
+

@@ -53,3 +53,31 @@ response => {
 
   );
 
+
+const apiUrlForecast =""
+
+  fetch(apiUrlForecast)
+  .then(response => response.json())
+  .then(
+    jsObject => {
+  jsObject.list.forEach(
+forecast => {
+   if(forecast.dt_txt.includes('18.00')) {
+     let forecastDate = new Date (forecast.dt_txt.replace('','T'));
+     let dayOfWeek = daysOfWeek[forecastDate.getDay()];
+     
+     document.getElement
+   }
+   }
+
+}
+
+
+  )
+
+
+    }
+
+
+  )
+
