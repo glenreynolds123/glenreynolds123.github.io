@@ -1,0 +1,83 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Preston</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.png" alt="favicon image" class="icon">
+        <h2>Reynolds Weather Network</h2>
+        <h3>For all ages who want to be informed.</h3>
+    </header>
+    <nav>
+        <ul id="menu">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a> </li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a> </li>
+            <li><a href="#">Gallery</a> </li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Gallery</h2>
+        <article class="pictures">
+            <figure>
+                <img src="images/placeholder.png" data-src="images/bluesky.jpg" alt="BlueSky">
+                <figcaption>A clear blue sky that is captivating</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/laketahoe.jpg" alt="LakeTahoe">
+                <figcaption> a majestic of view of Lake Tahoe </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/lighting.jpg" alt="lightning">
+                <figcaption> Images of lightning strikes </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/sunnyweather.jpg" alt="sunnyweather">
+                <figcaption>Sunny day where you can take a the family for a picnic</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/tornado.jpg" alt="tornado">
+                <figcaption>A dangerous tornado that can cause habit</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/tree.jpg" alt="tree">
+                <figcaption>A normal tree </figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/weatherradar.jpg" alt="weatherradar">
+                <figcaption>Weather should be measure by the radar</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/rainbow.jpg" alt="rainbow">
+                <figcaption>A colorful rainbow</figcaption>
+            </figure>
+            <figure>
+                <img src="images/placeholder.png" data-src="images/crystalball.jpg" alt="crystalball">
+                <figcaption>A shiny crystalball</figcaption>
+            </figure>
+        </article>
+    </main>
+    <footer>
+        <div>
+            &copy; Preston Weather Site | <span id="current-date"> </span> | Glen Reynolds
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>
