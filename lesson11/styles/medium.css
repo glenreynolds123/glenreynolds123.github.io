@@ -21,11 +21,11 @@
        width: 70%;
   }
   
-  /* article {
+   article {
       position: relative;
       height: 250px;
       padding-bottom: 3em;
-  } */
+  } 
   
   article h2 {
       position: absolute;
@@ -38,7 +38,7 @@
   
   
   
-  /* article img {
+ /* article img {
       position:absolute;
       width: 40%;
       top: 2em;
