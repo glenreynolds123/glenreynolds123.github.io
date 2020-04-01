@@ -1,6 +1,6 @@
 @media only screen and (min-width: 62.5em) {
     body section picture span button {
-        left: 50px !important;
+        left: 50px ;
     }
     body main section {
         margin-left: auto;
@@ -17,13 +17,13 @@
         font-size: 20px;
     }
     .hidemenu {
-        display: block !important;
+        display: block ;
     }
     nav ul li a #hidemenu {
         display: none;
     }
     #hamburger {
-        display: none !important;
+        display: none ;
     }
     nav #logo {
         position: relative;
@@ -40,7 +40,7 @@
         padding: 2em;
     }
     #temples { 
-     grid-template-columns: 1fr 1fr !important;
+     grid-template-columns: 1fr 1fr ;
      margin: auto;
     
     
