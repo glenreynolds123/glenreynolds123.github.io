@@ -34,10 +34,10 @@ function currentWeather(id) {
 }
 
 function loadWeatherData(){
-    currentWeather('5378538') //reno//
-    currentWeather('5389489') //lasvegas//
+    currentWeather('') //reno//
+    currentWeather('') //lasvegas//
     currentWeather('5605242') //rexburg//
-    currentWeather('5781770') //saltlakecity//
+    currentWeather('') //saltlakecity//
 }
 
 
