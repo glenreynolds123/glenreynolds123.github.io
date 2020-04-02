@@ -1,55 +1,316 @@
-function hidemenu() {
+<!DOCTYPE html>
+<html lang="en">
 
-    document.querySelectorAll('.hidemenu')
-        .forEach(element => {
-            if (element.style.display !== 'inline-block')
-                element.style.display = 'inline-block';
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <title>Temples</title>
+</head>
 
-            else
-                (element.style.display = 'none');
-        })
+<body onload="loadWeatherData()">
+    <header>
+        <nav>
+    
+            <img id="logo" src="images/final_logo.png">
+            <ul id="nav">
+                <li id = "hamburger">
+                    <a onclick = "hidemenu()">&equiv; Menu</a onclick = "hidemenu()">
+                </li>
+                <li>
+                    <a class = "hidemenu" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a class = "hidemenu" href="temples.html" id="current">Temples</a>
+                </li>
+                <li>
+                    <a class = "hidemenu" href="reservations.html">Reservations</a>
+                </li>
+                <li class="hidemenu">
+                    <span class="subnav">
+                            <a class="subnavbtn" href="services.html">Services</a>
+                        <span class="subnav-content">
+                          <a href="fulltime_missionaries.html">Full Time Missionaries</a>
+                         <a href="receptions.html">Receptions</a>
+                        </span>
+                    </span>
+                </li>
+                <li>
+                    <a class = "hidemenu" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        </header>                        
+    <main>
+        <section id = "templesbreak">
+        <span id="templeheading">
+            <h1> Oakland, California Temple </h1>
+            <article id="weathersummary" >
+                <h3 id="weatherheading">Weather Summary</h3>
+                <p id="weather-info">
+                    <span id="weatherDescription-5378538"></span>
+                    <img id="weather-icon-5378538"></img>
+                </p>
+                <p> Current Temperature: <span id="current-temp-5378538"></span>
+                </p>
+                <p> Wind Speed: <span id="speed-5378538"></span>
+                </p>
+                <p>
+                    Feels Like: <span id="windchill-5378538"></span>
+                </p>
+                <p>
+                    Humidity: <span id="humidity-5378538"></span>
+                </p>
+                </article>
+            </span>
+            <img id="templeimages" src="images/temple_page_lasvegas.jpg" alt="Las Vegas, Nevada Temple" id="templephoto">
+        <article id="temples">
+            <span id = "templeinfo">
+            <h1>
+                Address:
+            </h1>
+            <p id="address-Las_Vegas"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Phone number:
+            </h1>
+            <p id="phone-Las_Vegas"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Services:
+            </h1>
+            <p id="services-Las_Vegas"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Ordinance Schedule:
+            </h1>
+            <p id="ordinances-Las_Vegas"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Closed on:
+                
+            </h1>
+            <p id="closures-Oakland"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Temple History:
+            </h1>
+            <p id="history-Oakland"></p>
+        </span>
+        </article>
+    </section>
+    <section id = "templesbreak">
+        <span id="templeheading">
+            <h1>Reno, Nevada Temple</h1>
+            <article id="weathersummary" >
+                <h3 id="weatherheading">Weather Summary</h3> <br>
+                <p id="weather-info">
+                    <span id="weatherDescription-5389489"></span>
+                    <img id="weather-icon-5389489"></img>
+                </p>
+                <p> Current Temperature:
+                    <span id="current-temp-5389489"></span>
+    
+                </p>
+                <p> <span>Wind Speed:</span>
+                    <span id="speed-5389489"></span>
+                </p>
+                <p>
+                    Feels Like:
+                    <span id="windchill-5389489"></span>
+                </p>
+                <p>
+                    Humidity: <span id="humidity-5389489"></span>
+                    </p>
+                </article>
+        </span>
+        <img id="templeimages" src="images/temple_page_reno.jpg" alt="address-Reno, Nevada Temple" id="templephoto">
+        <article id="temples">
+            <span id = "templeinfo">
+            <h1>
+                Address:
+            </h1>
+            <p id="address-Reno"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Phone number:
+            </h1>
+            <p id="phone-Reno"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Services:
+            </h1>
+            <p id="services-Reno"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Ordinance Schedule:
+            </h1>
+            <p id="ordinances-Reno">
+            </p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Closed on:
+            </h1>
+            <p id="closures-Reno"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Temple History:
+            </h1>
+            <p  id="history-Reno"></p>
+        </span>
+        </article>
+    </section>
+    <section id = "templesbreak">
+        <span id="templeheading">
+           <h1> Rexburg, Idaho Temple
+        </h1>
+        <article id="weathersummary" >
+            <h3 id="weatherheading">Weather Summary</h3>
+            <p id="weather-info">
+                <span id="weatherDescription-5605242"></span>
+                <img id="weather-icon-5605242"></img>
+            </p>
+            <p> Current Temperature:
+                <span id="current-temp-5605242"></span>
 
-};
+            </p>
+            <p> Wind Speed:
+                <span id="speed-5605242"></span>
+            </p>
+            <p>
+                Feels Like:
+                <span id="windchill-5605242"></span>
+            </p>
+            <p>
+                Humidity: <span id="humidity-5605242"></span>
+                </span>
+            </article>
+            </span>
+            <img id="templeimages" src="images/temple_page_rexburg.jpeg" alt="Rexburg, ID Temple" id="templephoto">
+        <article id="temples">
+            <span id = "templeinfo">
+            <h1>
+                Address:
+            </h1>
+            <p id="address-Rexburg"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Phone number:
+            </h1>
+            <p id="phone-Rexburg"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Services:
+            </h1>
+            <p id="services-Rexburg"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Ordinance Schedule:
+            </h1>
+            <p id="ordinances-Rexburg"> </p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Closed on:
+            </h1>
+            <p id="closures-Rexburg"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Temple History:
+            </h1>
+            <p  id="history-Rexburg"></p>
+        </span>
+        </article>
+    </section>
+        <section id = "templesbreak">
+        <span id="templeheading">
+          <h1>  Salt Lake City, Utah Temple
+        </h1>
+        <article id="weathersummary" >
+            <h3 id="weatherheading">Weather Summary</h3>
+            <p id="weather-info">
+                <span id="weatherDescription-5781770"></span>
+                <img id="weather-icon-5781770"></img>
+            </p>
+            <p> Current Temperature:
+                <span id="current-temp-5781770"></span>
 
-//homepage button to reservations 
-
-
-// document.getElementById('button').onclick = function () {
-//     location = 'final_project/reservations.html';
-// };
-
-// json temples connection
-
-fetch('./json/temples.json')
-    .then(response => response.json())
-    .then(response => {
-            response.forEach((temple) => {
-                    document.querySelector(`#address-${temple.TempleName}`).innerHTML =
-                        `${temple.StreetAddress}<br/>${temple.City}, ${temple.State}`;
-                    document.querySelector(`#phone-${temple.TempleName}`).textContent = temple.PhoneNumber;
-
-                    temple.History.forEach(
-                        history => {
-                            document.querySelector(`#history-${temple.TempleName}`).innerHTML += `<li>${history.Milestone} - ${history.Date}</li>`
-                        }
-                    )
-                    temple.TempleClosures.forEach(
-                        closures => {
-                            document.querySelector(`#closures-${temple.TempleName}`).innerHTML += `<li>${closures}</li>`
-                        }
-                    )
-                    // temple.OrdinanceSchedule.forEach(
-                    //     OrdinanceSchedule => {
-                    document.querySelector(`#ordinances-${temple.TempleName}`).innerHTML += `<li>Endowment: ${temple.OrdinanceSchedule.Endowment}</li>
-                    <br/> <li>Initiatory: ${temple.OrdinanceSchedule.Initiatory}</li> <br/> <li>Baptims: ${temple.OrdinanceSchedule.Baptisms}</li> <br/> <li>Sealings: ${temple.OrdinanceSchedule.Sealings}</li>`
-                    // }) 
-                temple.Services.forEach(
-                    service => {
-                        document.querySelector(`#services-${temple.TempleName}`).innerHTML +=
-                            `<li>${service}</li>`;
-                    })
-            })
-    }
-
-)
-//current weather on temples
+            </p>
+            <p> Wind Speed:
+                <span id="speed-5781770"></span>
+            </p>
+            <p>
+                Feels Like:
+                <span id="windchill-5781770"></span>
+            </p>
+            <p>
+                Humidity: <span id="humidity-5781770"></span>
+                </p>
+            </article>
+        </span>
+        <img id="templeimages" src="images/temple_page_saltlakecity.jpg" alt="Salt Lake City, UT Temple" id="templephoto">
+        <article id="temples">
+            <span id = "templeinfo">
+            <h1>
+                Address:
+            </h1>
+            <p id="address-Salt_Lake_City"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Phone number:
+            </h1>
+            <p id="phone-Salt_Lake_City">5</p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Services:
+            </h1>
+            <p id="services-Salt_Lake_city"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Ordinance Schedule:
+            </h1>
+            <p id="ordinances-Salt_Lake_City"> </p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Closed on:
+            </h1>
+            <p id="closures-Salt_Lake_city"></p>
+        </span>
+        <span id = "templeinfo">
+            <h1>
+                Temple History:
+            </h1>
+            <p  id="history-Salt_Lake_City"></p>
+        </span>
+        </article>
+        </section>
+    </main>
+    <footer>
+        The Temple Inn & Suites | 2020 | Glen Reynolds
+    </footer>
+</body>
+<script src="./scripts/main.js"></script>
+<script src="scripts/weather.js"></script>
+</html>
