@@ -1,7 +1,7 @@
 function currentWeather(id) {
     console.log('start load')
 
-    let apiURL = `https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=3bc8d0eed950aefc26f97b8d2a9e475e&units=imperial`;
+    let apiURL = `https://api.openweathermap.org/data/2.5/weather?id=cb3ec5ffc2f9187132b85d95d52d9515${id}&appid=&units=imperial`;
 
     fetch(apiURL)
         .then(response => response.json())
@@ -34,10 +34,10 @@ function currentWeather(id) {
 }
 
 function loadWeatherData(){
-    currentWeather('') //reno//
-    currentWeather('') //lasvegas//
+    currentWeather('5511077') //reno//
+    currentWeather('5506956') //lasvegas//
     currentWeather('5605242') //rexburg//
-    currentWeather('') //saltlakecity//
+    currentWeather('5780993') //saltlakecity//
 }
 
 
