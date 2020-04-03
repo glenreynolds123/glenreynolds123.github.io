@@ -1,7 +1,6 @@
 function currentWeather(id) {
     console.log('start load')
-
-    let apiURL = `https://api.openweathermap.org/data/2.5/weather?id=cb3ec5ffc2f9187132b85d95d52d9515${id}&appid=&units=imperial`;
+    let apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=cb3ec5ffc2f9187132b85d95d52d9515&units=Imperial'
 
     fetch(apiURL)
         .then(response => response.json())
